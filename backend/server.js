@@ -58,9 +58,6 @@ auth.post('/register', (req, res) => {
     var index = users.push(req.body) - 1;
     var user = users[index];
     user.id = index;
-    // // hardcoded secret not for production use!!!
-    // var token = jwt.sign(user.id, '123');
-    // res.json({ firstName: user.firstName, token });
     sendToken(user, res);
 
 })
@@ -72,13 +69,10 @@ function sendToken(user, res) {
 }
 
 function sendAuthError(res) {
-    // return res({ success: false, message: 'Email or password is incorrect' });
     return res.json({ success: false, message: 'email or password incorrect' });
 }
 
 function checkAuthenticated(req, res, next) {
-     //console.log(req.header('authorization'));
-     // debugger;
      if(!req.header('authorization'))
         return res.status(401).send({message: 'Unauthorized requested. Missing authentication header'});
 
