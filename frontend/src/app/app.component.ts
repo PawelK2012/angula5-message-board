@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-// import { MessagesComponent } from './messages/messages.component';
- import { NavComponent } from './nav/nav.component';
-// services
-// import { MessagesService } from './services/messages.service';
+ import { NavComponent } from './components/nav/nav.component';
 
 @Component({
   selector: 'app-root',

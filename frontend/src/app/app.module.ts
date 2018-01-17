@@ -8,11 +8,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCardModule, MatInputModule, MatSnackBarModule, MatToolbarModule} from '@angular/material';
 // components
 import { AppComponent } from './app.component';
-import { MessagesComponent } from './messages/messages.component';
-import { NewMessageComponent } from './new-message/new-message.component';
-import { HomeComponent } from './home/home.component';
-import { NavComponent } from './nav/nav.component';
-import { RegisterComponent } from './register/register.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { NewMessageComponent } from './components/new-message/new-message.component';
+import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
+import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserComponent } from './components/user/user.component';
 // services

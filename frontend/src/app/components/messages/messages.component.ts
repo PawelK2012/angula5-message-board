@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MessagesService } from '../services/messages.service';
+import { MessagesService } from '../../services/messages.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
